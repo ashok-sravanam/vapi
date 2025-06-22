@@ -42,7 +42,7 @@ export interface VAPIExerciseResponse {
 }
 
 export interface VAPICallRequest {
-  assistant: { id: string }; // Fixed: Changed from string to object with id property
+  assistant: string; // Changed: assistant should be a string ID, not an object
   customer?: {
     number?: string;
     name?: string;
@@ -113,7 +113,7 @@ class VAPIClient {
       const truncatedUserId = userId.length > 35 ? userId.substring(0, 35) : userId;
       
       const callRequest: VAPICallRequest = {
-        assistant: { id: this.voiceAgentId }, // Fixed: Changed from string to object
+        assistant: this.voiceAgentId,
         customer: {
           name: `User_${truncatedUserId}`, // Fixed: Ensure under 40 characters
         },
@@ -158,7 +158,7 @@ class VAPIClient {
       const truncatedUserId = userId.length > 35 ? userId.substring(0, 35) : userId;
       
       const callRequest: VAPICallRequest = {
-        assistant: { id: this.voiceAgentId }, // Fixed: Changed from string to object
+        assistant: this.voiceAgentId,
         customer: {
           name: `User_${truncatedUserId}`, // Fixed: Ensure under 40 characters
         },
