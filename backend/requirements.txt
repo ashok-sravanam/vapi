@@ -1,0 +1,39 @@
+# FastAPI and ASGI server
+fastapi==0.104.1
+uvicorn[standard]==0.19.0
+
+# File handling and multipart support
+python-multipart==0.0.6
+
+# CORS support (FastAPI has built-in CORS, so we don't need fastapi-cors)
+# fastapi-cors==0.0.6  # Removed - conflicts with FastAPI
+
+# Logging and utilities
+python-json-logger==2.0.7
+
+# Audio processing and VibratoScope dependencies
+numpy==1.24.3
+scipy==1.11.4
+librosa==0.10.1
+matplotlib==3.7.2
+pandas==2.0.3
+soundfile==0.12.1
+
+# Supabase client for database access
+supabase==2.0.2
+
+# Production deployment
+gunicorn==21.2.0
+
+# Environment variables
+python-dotenv==1.0.0
+
+# Pydantic (compatible with both FastAPI and uAgents)
+pydantic==1.10.13
+
+# HTTP requests for Fetch AI API
+requests==2.31.0
+
+# Fetch AI uAgents (compatible versions)
+uagents==0.4.0
+uagents[protobuf]==0.4.0 
