@@ -669,7 +669,7 @@ const LiveCoach: React.FC = () => {
       </motion.div>
 
       {/* Debug Info (only show in development) */}
-      {import.meta.env.DEV && debugInfo.length > 0 && (
+      {/* {import.meta.env.DEV && debugInfo.length > 0 && (
         <div className="card mb-4 bg-gray-900/50 border border-gray-700/50">
           <h4 className="text-sm font-medium text-gray-400 mb-2">Debug Info:</h4>
           <div className="space-y-1">
@@ -680,7 +680,7 @@ const LiveCoach: React.FC = () => {
             ))}
           </div>
         </div>
-      )}
+      )} */}
 
       {/* Main Content */}
       <div className="card">
